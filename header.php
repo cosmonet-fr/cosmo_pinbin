@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
-<head>  
+<head>
   	<meta charset="<?php bloginfo('charset'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -8,19 +8,23 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    
+
     <?php wp_head(); ?>
 </head>
 
   <body <?php body_class(); ?>>
 
  	<!-- logo and navigation -->
+  <div class="myLogo">
+    <h1 class="title"> <a href="http://localhost/portfolio/"> Portfolio | Stéphane BILLOIS </a></h1>
+
+  </div>
 
  <nav id="site-navigation" class="main-nav" role="navigation">
-    <div id="main-nav-wrapper"> 
+    <div id="main-nav-wrapper">
                 <div id="logo">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"  title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-              
+
                     <?php $pinbin_options = get_option('theme_pinbin_options'); ?>
 
                 <?php if ( $pinbin_options['logo'] != '' ): ?>
@@ -29,16 +33,17 @@
                   </div>
                 <?php  endif; ?>
               </a>
-              
-         </div>  
+
+         </div>
           <?php if ( has_nav_menu( 'main_nav' ) ) { ?>
           <?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
           <?php } else { ?>
           <ul><?php wp_list_pages("depth=3&title_li=");  ?></ul>
-          <?php } ?> 
+          <?php } ?>
 
     </div>
-  </nav>  
+  </nav>
 <div class="clear"></div>
-<div id="wrap">
+<!--<div id="wrap">-->
   <div id="header"></div>
+<!--</div>// close wrap div -->

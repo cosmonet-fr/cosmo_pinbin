@@ -22,8 +22,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 0;
@@ -34,7 +34,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -54,15 +54,15 @@ table {
   border-spacing: 0;
 }
 
-body  { 
-  font-size:12px; 
-  line-height:20px;  
+body  {
+  font-size:12px;
+  line-height:20px;
   font-family: Helvetica, sans-serif;
   word-wrap: break-word;
   margin: 0;
 }
 
-#wrap { 
+#wrap {
   margin-left:3%;
 }
 
@@ -181,16 +181,17 @@ a:focus {
 /* Main Navigation
 --------------------------------------------------------------*/
 #main-nav-wrapper {
-  background: #fff;
+  display: none; /*modif*/
+  background: #555; /*modif*/
   float: left;
-  position: relative;
-  width: 100%;
-  min-height: 42px;
-  max-height: 86px;
-  z-index: 2;
+  /*position: relative;*/
+  /*width: 100%;*/
+  /*min-height: 42px;*/
+  /*max-height: 86px;*/
+  /*z-index: 2;*/
 }
 .main-nav {
-  display: block;
+  display: none;/*modif block*/
   float: left;
   position: fixed;
   width: 100%;
@@ -368,26 +369,23 @@ a:focus {
 /* Footer copyright
 --------------------------------------------------------------*/
 #copyright {
-  clear: both;
   width: 100%;
-  border-top: 2px solid #fff;
-  display: inline;
+  border-top: 2px solid #5be;
   float: left;
   margin-top: 20px;
-  padding-top: 10px;
-  margin-bottom: 20px;
+
 }
 #copyright p {
   padding-top: 15px;
-  color: #4f5356;
+  color: white;
   font-size: 12px;
 }
 #copyright a {
-  color: #858585;
+  color: #5be;
   text-decoration: none;
 }
 #copyright a:hover {
-  color: #111;
+  color: #6cf;
   text-decoration: underline;
 }
 /* Post and page style
@@ -471,7 +469,7 @@ a:focus {
 /* Post style on frontpage
 --------------------------------------------------------------*/
 #post-area .post {
-  width: 300px;
+  width: 299px; /*modif 300px*/
   background: #FFF;
   margin-right: 10px;
   margin-top: 15px;
@@ -863,4 +861,48 @@ h2 {
 .main-nav {
   background: #fff;
 }
+}
+
+
+/* Custom CSS */
+/*.blockPage {
+  display: flex;
+  justify-content: space-around;
+}*/
+#post-area {
+  margin-left: 5%;
+}
+
+.myLogo {
+	width: 100%;
+  display: flex; /*modif*/
+  background: #555; /*modif*/
+  float: left;
+}
+#post-area {
+	display: flex;
+	justify-content: space-around;
+}
+
+#copyright p{
+	margin: 1em;
+}
+
+#footer-area, #copyright {
+	background-color: #555;
+}
+
+.title {
+	margin: 0.5em;
+	font-weight: bold;
+}
+
+.title a{
+	text-decoration: none;
+	color: #5cf;
+}
+
+.title a:hover{
+	text-decoration: none;
+	color: #5cf;
 }
