@@ -7,8 +7,8 @@
 <?php get_header(); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
    		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<?php echo '<div class="post"><div class="page">'; ?>
 <?php if ( has_post_thumbnail() ) { ?>
   <div class="pinbin-image"><?php the_post_thumbnail( 'detail-image' );  ?></div>
   <div class="pinbin-category"><p><?php the_category(', ') ?></p></div>
@@ -32,6 +32,7 @@
 	 <div class="posttags"><?php the_tags(); ?></div>
                 <div class="clear"></div>
 				<?php //comments_template(); ?>
+				<?php echo '</div></div>'; ?>
 
                 </div>
 
