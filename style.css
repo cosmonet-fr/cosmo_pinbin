@@ -815,7 +815,7 @@ h2 {
   margin-top: 14px;
 }
 .pinbin-image img {
-  width: 100%;
+  width: 41.5%;
   height: auto;
 }
 #post-area {
@@ -916,4 +916,18 @@ h2 {
 .page {
   display: block;
   width: 750px;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+}
+
+a i {
+	color: #5cf;
+	margin: 0.3em 1em;
+}
+
+a i:hover {
+	color: #acf;
 }
