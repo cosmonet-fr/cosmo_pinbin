@@ -8,6 +8,8 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script src="https://kit.fontawesome.com/aa0ff56e6d.js" crossorigin="anonymous"></script>
+
 
     <?php wp_head(); ?>
 </head>
