@@ -16,7 +16,7 @@
 
  	<!-- logo and navigation -->
   <div class="myLogo">
-    <h1 class="title"> <a href="http://localhost/portfolio/"> Portfolio | Stéphane BILLOIS </a></h1>
+    <h1 class="title"> <a href="http://portfolio.billois.org/portfolio/"> Portfolio | Stéphane BILLOIS </a></h1>
 
   </div>
 
