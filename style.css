@@ -183,7 +183,7 @@ a:focus {
 #main-nav-wrapper {
   display: none; /*modif*/
   background: #555; /*modif*/
-  float: left;
+  /*float: left;*/
   /*position: relative;*/
   /*width: 100%;*/
   /*min-height: 42px;*/
@@ -192,7 +192,7 @@ a:focus {
 }
 .main-nav {
   display: none;/*modif block*/
-  float: left;
+  /*float: left;*/
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -205,7 +205,7 @@ a:focus {
 }
 .main-nav ul li {
   display: inline;
-  float: left;
+  /*float: left;*/
   padding: 12px 12px;
   position: relative;
 }
@@ -272,7 +272,7 @@ a:focus {
   max-height: 50px;
   padding: 0 0 0 3%;
   position: relative;
-  float: left;
+  /*float: left;*/
 }
 #logo img:hover,.pinbin-image img:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -294,7 +294,7 @@ a:focus {
 #footer-area {
   width: 100%;
   display: inline;
-  float: left;
+  /*float: left;*/
   padding-top: 10px;
   margin-top: 20px;
   clear: both;
@@ -305,7 +305,7 @@ a:focus {
   margin-right: 10px;
   padding-top: 15px;
   display: inline;
-  float: left;
+  /*float: left;*/
   font-size: 12px;
   color: #454545;
   line-height: 18px;
@@ -335,7 +335,7 @@ a:focus {
   width: 280px;
   overflow: hidden;
   display: inline;
-  float: left;
+  /*float: left;*/
   margin-left: 10px;
 }
 #footer-area .widget-copy a {
@@ -371,8 +371,9 @@ a:focus {
 #copyright {
   width: 100%;
   border-top: 2px solid #5be;
+  opacity: 0.9;
   float: left;
-  margin-top: 20px;
+  margin-top: 8em;
 
 }
 #copyright p {
@@ -399,12 +400,11 @@ a:focus {
   border-bottom: 1px solid #dbdbdb;
 }
 .type-post,.type-page,.type-attachment {
-  width: 95%;
-  margin: 0 2.5%;
+  width: 750px;
   background: #fff;
-  /*margin-right: 10px;
+  margin-right: 10px;
   margin-top: 15px;
-  float: left;*/
+  /*float: left;*/
 }
 .type-post {
   position: relative;
@@ -420,7 +420,7 @@ a:focus {
   filter: alpha(opacity=70);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
-  /*opacity: 0.7;*/
+  opacity: 0.7;
   margin-top: -36px;
   z-index: 1;
   height: 30px;
@@ -516,7 +516,7 @@ a:focus {
 --------------------------------------------------------------*/
 .post-nav {
   display: inline;
-  float: left;
+  /*float: left;*/
   margin-left: 10px;
   margin-top: 15px;
 }
@@ -552,7 +552,7 @@ a:focus {
   float: right;
 }
 .view-previous {
-  float: left;
+  /*float: left;*/
 }
 .view-previous,.view-next {
   margin-top: 20px;
@@ -565,7 +565,7 @@ a:focus {
 .comments-area li {
   width: 100%;
   clear: both;
-  float: left;
+  /*float: left;*/
   margin-bottom: 10px;
 }
 .comments-area {
@@ -633,7 +633,7 @@ label {
   margin: 0 auto;
 }
 .alignleft {
-  float: left;
+  /*float: left;*/
   margin: 10px 10px 20px 0;
 }
 .alignright {
@@ -766,7 +766,7 @@ iframe {
   background: #777;
 }
 .posttags {
-  float: left;
+  /*float: left;*/
 }
 .type-post .post-next a {
   margin-left: 264px;
@@ -878,7 +878,9 @@ h2 {
 	width: 100%;
   display: flex; /*modif*/
   background: #555; /*modif*/
-  float: left;
+  opacity: 0.9;
+  /*float: left;*/
+  border-bottom: 2px solid #5be;
 }
 #post-area {
 	display: flex;
@@ -908,7 +910,7 @@ h2 {
 	color: #5cf;
 }
 
-.post {
-  display: flex;
-  justify-content: center;
+.page {
+  display: block;
+  width: 750px;
 }
