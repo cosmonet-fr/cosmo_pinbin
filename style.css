@@ -814,8 +814,10 @@ h2 {
 .post-nav {
   margin-top: 14px;
 }
-.pinbin-image img {
+.page .pinbin-image img {
   width: 41.5%;
+}
+.pinbin-image img {
   height: auto;
 }
 #post-area {
