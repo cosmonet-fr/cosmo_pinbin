@@ -933,3 +933,6 @@ a i {
 a i:hover {
 	color: #acf;
 }
+.wp-block-image img {
+  height: auto;
+}
